@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección principal -->
+    <section class="hero-section">
+        <article class="birthday-card">
+            <!-- Partículas decorativas de fondo -->
+            <section class="card-particles" id="cardParticles"></section>
+            
+            <!-- Encabezado -->
+            <header class="card-header">
+                <h1>🎉 ¡Feliz Cumpleaños! 🎂</h1>
+            </header>
+
+            <!-- Contenido principal -->
+            <section class="card-content">
+                <article class="message-text">
+                    <p>¡Llegó tu día y hay que celebrarlo a lo grande!</p>
+    <p>Que este nuevo año te sorprenda con aventuras inesperadas, risas infinitas y todos los planes locos que tengas en mente. ¡Eres lo máximo! 💫</p>
+                </article>
+
+                <!-- Contador de edad -->
+                <section>
+                    <p style="font-size: 1.2rem; margin: 20px 0;">¡Estás cumpliendo...</p>
+                    <span class="age-counter" id="ageCounter">25</span>
+                    <p style="font-size: 1.2rem;">años increíbles!</p>
+                </section>
+
+                <!-- Velas interactivas -->
+                <section class="candles-container" id="candlesContainer">
+                    <!-- Velas generadas por JS -->
+                </section>
+                <p id="candleMessage" style="color: #667eea; font-weight: bold; margin-top: 10px;"></p>
+
+                <!-- Botones interactivos -->
+                <section class="interactive-buttons">
+                    <button class="btn btn-confetti" onclick="launchConfetti()">🎊 Lanzar Confeti</button>
+                    <button class="btn btn-balloons" onclick="launchBalloons()">🎈 Soltar Globos</button>
+                    <button class="btn btn-music" onclick="playBirthdaySong()">🎵 Cantar</button>
+                </section>
+
+                <!-- Deseos para el año -->
+                <section class="wishes-section">
+                    <h2 class="wishes-title">🎁 Deseos para tu nuevo año 🎁</h2>
+                    <article class="wishes-grid">
+                        <section class="wish-card" onclick="flipCard(this)">
+                            <section class="card-inner">
+                                <section class="card-front">🌟</section>
+                                <section class="card-back">Que logres todo lo que te propongas</section>
+                            </section>
+                        </section>
+                        <section class="wish-card" onclick="flipCard(this)">
+                            <section class="card-inner">
+                                <section class="card-front">✨</section>
+                                <section class="card-back">Muchas aventuras y risas inolvidables</section>
+                            </section>
+                        </section>
+                        <section class="wish-card" onclick="flipCard(this)">
+                            <section class="card-inner">
+                                <section class="card-front">💫</section>
+                                <section class="card-back">Salud y energía para brillar siempre</section>
+                            </section>
+                        </section>
+                        <section class="wish-card" onclick="flipCard(this)">
+                            <section class="card-inner">
+                                <section class="card-front">🎈</section>
+                                <section class="card-back">Momentos mágicos junto a tus seres queridos</section>
+                            </section>
+                        </section>
+                    </article>
+                    <p style="color: #120e0e; font-size: 0.9rem; margin-top: 15px; font-style: italic;">💡 Haz clic en cada tarjeta para revelar tu deseo</p>
+                </section>
+
+                <!-- Mensaje final -->
+                <section class="final-message">
+                    <p>"Que cada momento de tu vida sea tan brillante como las velas que soplaste hoy. ¡Eres única y especial! 💫"</p>
+                </section>
+            </section>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
